@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Smart Irrigation System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+
+</style>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <div class="logo">
+                    <span class="irrigo">Irrigo</span>
+                    <span class="s">S</span>
+                    <span class="mart">mart</span>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="SMS.html">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="benefits.html">Benefits</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                </ul>
+                <button class="btn btn-warning ms-3" id="darkModeToggle">Toggle Dark Mode</button>
+            </div>
+        </div>
+    </nav>
+    <div class="container text-center">
+        <h1 class="text-black bold">CROP DISEASE DIAGNOSIS</h1>
+        <label for="crop">Select Crop:</label>
+        <select id="crop" onchange="loadDiseases()">
+            <option value="">-- Choose a Crop --</option>
+        </select>
+        <br>
+        <label for="disease">Select Disease:</label>
+        <select id="disease">
+            <option value="">-- Choose a Disease --</option>
+        </select>
+        <br>
+        <button class="btn btn-success" onclick="diagnoseDisease()">Get Solution</button>
+        <p id="output"></p>
+    </div>
+    <div class="container">
+        <h2>Government Schemes for Farmers</h2>
+        <div id="schemesList"></div>
+    </div>
+
+    <script src="services.js"></script>
+    </body>
+    </html>

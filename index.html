@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Smart Irrigation System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <div class="logo">
+                    <span class="irrigo">Irrigo</span>
+                    <span class="s">S</span>
+                    <span class="mart">mart</span>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="SMS.html">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="benefits.html">Benefits</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                </ul>
+                <button class="btn btn-warning ms-3" id="darkModeToggle">Toggle Dark Mode</button>
+            </div>
+        </div>
+    </nav>
+    <div class="container my-5">
+        <div class="row g-3">
+            <div class="col-md-6">
+                <img src="smart irriagtion.webp" class="img-fluid w-100" alt="Smart Irrigation">
+            </div>
+            <div class="col-md-6">
+                <img src="smart-irrigation-3.jpg" class="img-fluid w-100" alt="Irrigation System">
+            </div>
+        </div>
+    </div>
+
+    <section class="container text-center my-5 hero">
+        <h1 class="display-4">Smart Irrigation System</h1>
+        <p class="lead">Revolutionizing Farming with AI and Automation</p>
+        <button class="btn btn-primary " id="sms">Learn More</button>
+    </section>
+
+    <section class="container text-center my-5" id="features">
+        <h2>🌱 Unique Features</h2>
+        <div class="row mt-4">
+            <div class="container text-center mt-5">
+                <h1>Check Weather by Pincode</h1>
+                <input type="text" id="pincode" class="form-control w-50 mx-auto" placeholder="Enter Pincode">
+                <button class="btn btn-primary mt-3" onclick="getWeather()">Get Weather</button>
+                
+                <div id="weatherResult" class="mt-4"></div>
+            </div>
+            <div class="col-md-4">
+                <i class="fas fa-tint fa-3x"></i>
+                <h4>AI Soil Moisture Detection</h4>
+                <p>Automatically detects moisture levels and waters accordingly.</p>
+            </div>
+            <div class="col-md-4">
+                <i class="fas fa-calendar-alt fa-3x"></i>
+                <h4>Custom Irrigation Scheduling</h4>
+                <p>Set automatic watering schedules based on crop needs.</p>
+            </div>
+            <div class="col-md-4">
+                <i class="fas fa-tint fa-3x"></i>
+                <h4>AI Soil Moisture Detection</h4>
+                <p>Automatically detects moisture levels and waters accordingly.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container text-center my-5" id="benefits">
+        <h2>🌍 Benefits of Smart Irrigation</h2>
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <i class="fas fa-water fa-3x"></i>
+                <h4>Water Efficiency</h4>
+                <p>Saves up to 50% of water by optimizing irrigation schedules.</p>
+            </div>
+            <div class="col-md-6">
+                <i class="fas fa-leaf fa-3x"></i>
+                <h4>Eco-Friendly</h4>
+                <p>Reduces water wastage and ensures sustainable farming.</p>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="container my-5 text-center" id="testimonials">
+        <h2>🌾 Testimonials</h2>
+        <p class="lead">See how farmers are benefiting from our system!</p>
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <blockquote>"Since installing this system, my water bills have dropped significantly!" - Ramesh, Punjab</blockquote>
+            </div>
+            <div class="col-md-4">
+                <blockquote>"Now my crops receive exactly the right amount of water. Love this tech!" - Priya, Maharashtra</blockquote>
+            </div>
+            <div class="col-md-4">
+                <blockquote>"Easy to use and saves a lot of effort. Highly recommended!" - Suresh, Karnataka</blockquote>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 Smart Irrigation System | All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
